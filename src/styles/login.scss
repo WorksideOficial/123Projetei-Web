@@ -1,0 +1,79 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 150px;
+    
+    h2{
+        padding: 20px 0px;
+    }
+
+    .infor{
+        background-color: #067bd3;
+        padding: 15px;
+        color: white;
+        width: 50%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .form{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 12px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+        .input{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            label{
+                padding: 5px 0px;
+            }
+            input{
+                padding: 10px;
+                background-color: inherit;
+                border-bottom: 1px solid #ccc;
+            }
+            button{
+                padding: 12px;
+                width: 30%;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .login{
+        padding: 0px 20px;
+        .form{
+            width: 75%;
+            .input{
+                button{
+                    width: 35%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .login{
+        padding: 0px 20px;
+        .form{
+            width: 100%;
+            .input{
+                button{
+                    width: 40%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    height: 65px;
+    border-bottom: 1px solid #ccc;
+
+    a{
+        color: #333;
+    }
+
+    .menu{
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                span{
+                    padding: 12px;
+                }
+                a{
+                    color: #333;
+                }
+
+                button{
+                    background-color: #fb4040;
+                    color: white;
+                    border-radius: 5px;
+                    padding: 10px;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .header{
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        padding: 0 20px;
+    }
+}

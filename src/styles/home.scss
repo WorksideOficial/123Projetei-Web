@@ -1,0 +1,128 @@
+.home{
+    padding: 0px 150px;
+
+    .section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+            padding: 20px 0px;
+        }
+        button{
+            background-color: #479549;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+        thead{
+            background-color: black;
+            font-weight: bold;
+            color: white;
+        }
+        tbody tr:nth-child(2n){
+            background-color: #ccc;
+        }
+        th,
+        td,
+        table {
+            border: 1px solid gray;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+        table {
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        td {
+            width: 10%;
+            text-align: center;
+
+            button,a{
+                padding: 10px;
+                background-color: gray;
+                color: white;
+                border-radius: 5px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .edit{
+                background-color: #067bd3;
+            }
+            .remove{
+                background-color: #fb4040;
+            }
+        }
+            // td:nth-cheld(1){width: 10%;}
+            // td:nth-cheld(2){width: 10%;}
+            // td:nth-cheld(3){width: 10%;}
+            // td:nth-cheld(4){width: 10%;}
+            // td:nth-cheld(5){width: 10%;}
+            // td:nth-cheld(6){width: 10%;}
+
+
+    /*ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            width: 23%;
+            margin: 0px 10px 10px 0px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            span{
+                padding: 5px;
+            }
+        }
+        
+    }*/
+}
+
+@media only screen and (max-width: 960px){
+    .home{
+        padding: 0 20px;
+        .section{
+            h2{
+                font-size: 15px;
+            }
+            button{
+                font-size: 11px;
+            }
+        }
+        
+
+        
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .home{
+        padding: 0 20px;
+        .section{
+            h2{
+                font-size: 15px;
+            }
+            button{
+                font-size: 11px;
+            }
+        }
+        thead{
+            display: none;
+        }
+        tbody td{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+    }
+}
